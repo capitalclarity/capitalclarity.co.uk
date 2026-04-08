@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Capital Clarity Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --primary: #0B2E59;   /* deep navy */
+      --secondary: #1F5A99; /* mid blue */
+      --accent: #F5A623;    /* gold */
+      --light: #F4F7FB;
+      --dark: #1a1a1a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--dark);
+      background: #ffffff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      padding: 90px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 32px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d8921c;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: var(--primary);
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--secondary);
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 14px;
+      width: 100%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: var(--primary);
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Capital Clarity Solutions Logo">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Clarity. Control. Financial Freedom.</h1>
+  <p>Helping you eliminate debt, take control of your money, and build lasting wealth with simple, practical strategies.</p>
+  <a href="#contact" class="btn">Book Your Free Financial Clarity Call</a>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Capital Clarity Solutions provides straightforward, no-nonsense financial coaching.
+    We help you break free from debt, understand your finances, and build a plan that works in real life.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Debt Elimination</h3>
+      <p>Clear, structured plans to reduce and eliminate debt efficiently.</p>
+    </div>
+
+    <div class="card">
+      <h3>Budget Coaching</h3>
+      <p>Take full control of your income and spending with proven systems.</p>
+    </div>
+
+    <div class="card">
+      <h3>Wealth Building</h3>
+      <p>Simple strategies to grow your wealth and secure your future.</p>
+    </div>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Get In Touch</h2>
+
+  <div class="contact-form">
+    <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <input type="tel" name="phone" placeholder="Phone Number">
+
+      <textarea name="message" rows="5" placeholder="Tell me about your situation..."></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Capital Clarity Solutions</p>
+</footer>
+
+</body>
+</html>
